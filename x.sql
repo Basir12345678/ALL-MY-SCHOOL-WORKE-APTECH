@@ -37,6 +37,11 @@
 -- (NAME = 'SampleDB', FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\SampleDB_snapshot.ss')
 -- AS SNAPSHOT OF SampleDB;
 -- GO
+ALTER TABLE Training.Experts
+ DROP COLUMN institute;
+ ALTER TABLE Training.Experts ADD institute NVARCHAR(200);
+ 
+
 
 
 
